@@ -1,18 +1,3 @@
-CREATE DATABASE IF NOT EXISTS DBTtestRun1;
-
-CREATE SCHEMA IF NOT EXISTS schemaTestRun;
-
-CREATE TASK IF NOT EXISTS run;
-
--- Create a warehouse to run the task
-CREATE WAREHOUSE AIKOTEST_WH;
-
--- Create or replace the source table if it does not exist
-CREATE OR REPLACE TABLE schemaTestRun.Source_tabletest (
-    column1_task VARCHAR,
-    column2_one INT,
-    column3_time DATE);
-
 -- Create a SQL query that you want to run
 CREATE OR REPLACE TABLE dbttest1.your_table_name AS
 SELECT *
